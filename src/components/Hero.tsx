@@ -20,14 +20,9 @@ const Hero = () => {
               {/* Added 'invert' class here to turn black text to white */}
               <img
                 src="https://lh3.googleusercontent.com/d/1fk91ln_9whUoiV4L9nIw-AT4VMIcYNrj"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  const fallback = document.getElementById('hero-title-fallback');
-                  if (fallback) fallback.style.display = 'block';
-                }}
+
                 alt="2nd IGSO Title"
-                className="w-full max-w-md mx-auto lg:mx-0 drop-shadow-2xl invert brightness-0 invert"
+                className="w-full max-w-md mx-auto lg:mx-0 drop-shadow-2xl invert brightness-0"
               />
 
               <h1 id="hero-title-fallback" className="hidden serif-heading text-5xl md:text-7xl text-white leading-tight mb-4">

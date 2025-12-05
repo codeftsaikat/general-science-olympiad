@@ -1,14 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-interface HeaderProps {
-  mobileMenuOpen: boolean;
-  setMobileMenuOpen: (open: boolean) => void;
-  switchTab: (tabId: string) => void;
-}
+const Header: React.FC = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-const Header: React.FC<HeaderProps> = ({ mobileMenuOpen, setMobileMenuOpen, switchTab }) => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -36,10 +32,6 @@ const Header: React.FC<HeaderProps> = ({ mobileMenuOpen, setMobileMenuOpen, swit
             <a href="#" className="flex items-center gap-3 group">
               <img
                 src="https://lh3.googleusercontent.com/d/1Y9EoVaG5w-Wtrz58ykvXV0ANvIo7mi_S"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = 'https://placehold.co/100x100/0f766e/ffffff?text=GSO';
-                }}
                 alt="GSO Logo"
                 className="h-12 w-auto object-contain filter group-hover:brightness-110 transition-all"
               />
@@ -63,7 +55,8 @@ const Header: React.FC<HeaderProps> = ({ mobileMenuOpen, setMobileMenuOpen, swit
                     <span className="block text-slate-900 font-bold">1st NGSO</span>
                     <span className="block text-xs text-slate-500 mt-0.5">National Legacy Event</span>
                   </a>
-                  <a href="#events" onClick={() => switchTab('ongoing')} className="block px-4 py-3 rounded-md hover:bg-slate-50">
+                  <a href="#events" onClick={() => setMobileMenuOpen(false)}
+                    className="block px-4 py-3 rounded-md hover:bg-slate-50">
                     <span className="block text-teal-700 font-bold">2nd IGSO <span className="ml-2 text-[10px] bg-green-100 text-green-700 px-1.5 py-0.5 rounded border border-green-200 uppercase">Live</span></span>
                     <span className="block text-xs text-slate-500 mt-0.5">International Championship</span>
                   </a>
@@ -99,7 +92,8 @@ const Header: React.FC<HeaderProps> = ({ mobileMenuOpen, setMobileMenuOpen, swit
           <div className="border-t border-b border-gray-100 py-4">
             <div className="text-xs uppercase text-slate-400 font-bold mb-3">Events</div>
             <a href="#first-ngso-details" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-base">1st National GSO</a>
-            <a href="#events" onClick={() => { switchTab('ongoing'); setMobileMenuOpen(false); }} className="block py-2 text-teal-700 font-bold">2nd International GSO</a>
+            <a href="#events" onClick={() => setMobileMenuOpen(false)}
+              className="block py-2 text-teal-700 font-bold">2nd International GSO</a>
           </div>
           <a href="#media" className="block hover:text-teal-700">Media</a>
           <a href="https://sciencebaze.com/direct-reg/second-igso" className="block w-full text-center bg-slate-900 text-white py-3 rounded-md text-sm uppercase tracking-wide mt-4">Register Now</a>
