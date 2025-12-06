@@ -14,7 +14,6 @@ export default function Home() {
 
   return (
     <div className="antialiased">
-      <div className="texture-overlay"></div>
       <ScrollEffect />
       <Header />
       <Hero />

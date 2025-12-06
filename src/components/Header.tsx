@@ -11,21 +11,9 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {/* Top Bar (Trust Signal) */}
-      <div className="bg-slate-900 text-white py-2 px-4 text-xs font-medium relative z-50 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <span className="flex items-center gap-2 text-gold-400">
-            <i className="fas fa-certificate text-[#D4AF37]"></i> Official International Science Competition
-          </span>
-          <div className="hidden md:flex gap-6 text-slate-400">
-            <span className="flex items-center gap-1 hover:text-white cursor-pointer"><i className="fas fa-envelope"></i> info@sciencebaze.com</span>
-            <span className="flex items-center gap-1 hover:text-white cursor-pointer"><i className="fas fa-lock"></i> Secure Registration</span>
-          </div>
-        </div>
-      </div>
 
       {/* Navigation */}
-      <nav className="sticky top-0 w-full z-40 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+      <nav className="sticky top-0 w-full z-40 bg-white/90 backdrop-blur-md transition-all duration-300" id="navbar">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}

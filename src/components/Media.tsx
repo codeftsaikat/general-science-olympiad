@@ -2,22 +2,18 @@
 import { useEffect } from 'react';
 
 const Media = () => {
-  // Handle YouTube video containers
   useEffect(() => {
     const handleVideoClick = (e: Event) => {
       const container = e.currentTarget as HTMLElement;
 
-      // If it's already active, do nothing (to avoid restarting the video)
       if (container.classList.contains('active')) return;
 
       const videoId = container.getAttribute('data-videoid');
       const iframe = container.querySelector('iframe');
 
       if (videoId && iframe) {
-        // Set the iframe src to start loading and playing the video
         iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
 
-        // Set the container to active to hide the overlay and show the iframe
         container.classList.add('active');
       }
     };
