@@ -147,3 +147,23 @@ h3,
   background: rgba(21, 157, 140, 0.9);
   /* Primary teal hover */
 }
+
+/* Custom video player styles */
+.react-player {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-play-btn {
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* Custom video controls */
+video::-webkit-media-controls-panel {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+video::-webkit-media-controls-play-button {
+  background-color: #D4AF37;
+  border-radius: 50%;
+}

@@ -13,20 +13,21 @@ const Header: React.FC = () => {
     <>
 
       {/* Navigation */}
-      <nav className="sticky top-0 w-full z-40 bg-white/90 backdrop-blur-md transition-all duration-300" id="navbar">
+      <nav className="sticky top-0 w-full z-40 bg-white/90 backdrop-blur-mdtransition-all duration-300" id="navbar">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group">
               <img
-                src="https://lh3.googleusercontent.com/d/1Y9EoVaG5w-Wtrz58ykvXV0ANvIo7mi_S"
+                // src="https://lh3.googleusercontent.com/d/1Y9EoVaG5w-Wtrz58ykvXV0ANvIo7mi_S"
+                src="https://lh3.googleusercontent.com/d/1fk91ln_9whUoiV4L9nIw-AT4VMIcYNrj"
                 alt="GSO Logo"
-                className="h-12 w-auto object-contain filter group-hover:brightness-110 transition-all"
+                className="h-16 w-auto object-contain filter group-hover:brightness-110 transition-all "
               />
-              <div className="hidden lg:block">
+              {/* <div className="hidden lg:block">
                 <span className="block font-bold serif-heading text-slate-900 text-lg leading-tight tracking-tight">General Science</span>
                 <span className="block text-teal-700 text-sm font-semibold tracking-wider uppercase">Olympiad</span>
-              </div>
+              </div> */}
             </a>
 
             {/* Desktop Menu */}
