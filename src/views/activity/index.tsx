@@ -70,7 +70,7 @@ const SimpleActivitiesSection = () => {
     const currentActivity = activities[currentIndex];
 
     return (
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white" id="about">
             <div className="container px-4 max-w-6xl mx-auto">
 
                 <div className="text-center mb-12 md:mb-16">
@@ -81,7 +81,7 @@ const SimpleActivitiesSection = () => {
                     </div>
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-                        Explore Our <span className="text-primary">Activity</span>
+                        Explore Our <span className="text-primary"> Activity </span>
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                         5 specialized programs to nurture talent at every level

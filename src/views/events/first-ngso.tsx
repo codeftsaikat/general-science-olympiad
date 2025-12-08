@@ -29,7 +29,7 @@ const MissionVisionImpact = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-16 md:py-24 bg-white">
+        <section ref={sectionRef} className="py-16 md:py-24 bg-white" id='first'>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-20">
@@ -39,7 +39,7 @@ const MissionVisionImpact = () => {
                             Our Purpose & Impact
                         </Badge>
                     </div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
                         Shaping Future <span className="text-primary">Thinkers</span> & <span className="text-primary">Changemakers</span>
                     </h2>
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -250,7 +250,7 @@ const MissionVisionImpact = () => {
                 </div>
 
                 {/* CTA Section */}
-                <div className="text-center">
+                {/* <div className="text-center">
                     <div className="inline-block bg-primary/5 rounded-full px-6 py-3 mb-6">
                         <span className="text-primary font-semibold text-sm uppercase tracking-wide">Join Our Movement</span>
                     </div>
@@ -265,7 +265,7 @@ const MissionVisionImpact = () => {
                             Explore Programs
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

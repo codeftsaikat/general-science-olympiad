@@ -17,11 +17,12 @@ export default function Home() {
       <Header />
       <Hero />
       <div className='max-w-7xl mx-auto'>
-        <CategoriesSection />
+
         {/* <TrustStrip /> */}
         <MissionVisionImpactSimple />
         {/* <ValueProposition /> */}
         <EventsSection />
+        <CategoriesSection />
         {/* <Categories /> */}
         {/* <Mission /> */}
         {/* <Events /> */}

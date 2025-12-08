@@ -18,7 +18,7 @@ const EventsSection = () => {
     };
 
     return (
-        <section className="py-16 md:py-24 bg-gray-50/50">
+        <section className="py-16 md:py-24 bg-gray-50/50" id="second">
             <div className="container px-4 mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-16">

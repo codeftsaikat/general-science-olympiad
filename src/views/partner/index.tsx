@@ -135,7 +135,7 @@ const PartnersSection = () => {
                         Partners & Sponsors
                     </Badge>
 
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
                         Trusted by 200+{" "}
                         <span className="text-primary">
                             Organizations

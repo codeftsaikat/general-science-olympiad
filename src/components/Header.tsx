@@ -29,18 +29,18 @@ const Header: React.FC = () => {
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
               <a href="#" className="nav-link hover:text-teal-700">Home</a>
-              <a href="#mission" className="nav-link hover:text-teal-700">About Us</a>
+              <a href="#about" className="nav-link hover:text-teal-700">About Us</a>
 
               <div className="relative group py-4">
                 <button className="flex items-center gap-1 hover:text-teal-700 focus:outline-none">
                   Events <i className="fas fa-chevron-down w-3 h-3"></i>
                 </button>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full w-64 bg-white rounded-lg shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2">
-                  <a href="#first-ngso-details" className="block px-4 py-3 rounded-md hover:bg-slate-50">
+                  <a href="#first" className="block px-4 py-3 rounded-md hover:bg-slate-50">
                     <span className="block text-slate-900 font-bold">1st NGSO</span>
                     <span className="block text-xs text-slate-500 mt-0.5">National Legacy Event</span>
                   </a>
-                  <a href="#events" onClick={() => setMobileMenuOpen(false)}
+                  <a href="#second" onClick={() => setMobileMenuOpen(false)}
                     className="block px-4 py-3 rounded-md hover:bg-slate-50">
                     <span className="block text-teal-700 font-bold">2nd IGSO <span className="ml-2 text-[10px] bg-green-100 text-green-700 px-1.5 py-0.5 rounded border border-green-200 uppercase">Live</span></span>
                     <span className="block text-xs text-slate-500 mt-0.5">International Championship</span>

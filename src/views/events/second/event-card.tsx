@@ -44,7 +44,7 @@ const EventCard = ({ event, isFeatured = false }: EventCardProps) => {
                             <Badge variant="outline" className={getStatusColor(event.status)}>
                                 {getStatusIcon(event.status)} {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
                             </Badge>
-                            <Badge variant="secondary" className="bg-primary text-primary border-primary">
+                            <Badge variant="secondary" className="text-primary border-primary">
                                 {event.category}
                             </Badge>
                         </div>

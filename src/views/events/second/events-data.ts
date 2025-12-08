@@ -18,7 +18,7 @@ export const eventsData: EventsData = {
         "A prestigious international science competition challenging young minds with innovative problem-solving and critical thinking tasks.",
       image: "/events/igso-banner.jpg",
       buttonText: "Learn More & Register",
-      buttonLink: "#",
+      buttonLink: "https://sciencebaze.com/direct-reg/second-igso",
       status: "ongoing",
       category: "Olympiad",
       participants: "5,000+",

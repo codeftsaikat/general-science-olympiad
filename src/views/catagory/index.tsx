@@ -137,7 +137,7 @@ const CategoriesSection = () => {
                             Learning Pathways
                         </Badge>
                     </div>
-                    <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-center">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
                         Specially Designed{" "}
                         <span className="text-primary">
                             Categories
