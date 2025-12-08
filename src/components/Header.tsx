@@ -19,15 +19,11 @@ const Header: React.FC = () => {
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group">
               <img
-                // src="https://lh3.googleusercontent.com/d/1Y9EoVaG5w-Wtrz58ykvXV0ANvIo7mi_S"
-                src="https://lh3.googleusercontent.com/d/1fk91ln_9whUoiV4L9nIw-AT4VMIcYNrj"
+                src="/logo-dark.svg"
                 alt="GSO Logo"
-                className="h-16 w-auto object-contain filter group-hover:brightness-110 transition-all "
+                className="h-14 w-auto object-contain filter group-hover:brightness-110 transition-all "
               />
-              {/* <div className="hidden lg:block">
-                <span className="block font-bold serif-heading text-slate-900 text-lg leading-tight tracking-tight">General Science</span>
-                <span className="block text-teal-700 text-sm font-semibold tracking-wider uppercase">Olympiad</span>
-              </div> */}
+
             </a>
 
             {/* Desktop Menu */}

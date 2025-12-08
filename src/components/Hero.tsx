@@ -17,13 +17,13 @@ const Hero = () => {
             </div>
 
             {/* Fallback if Image Fails, otherwise Image Title */}
-            {/* <div className="mb-6">
+            <div className="mb-6">
               <img
                 src="https://lh3.googleusercontent.com/d/1fk91ln_9whUoiV4L9nIw-AT4VMIcYNrj"
                 alt="2nd IGSO Title"
                 className="w-full max-w-md mx-auto lg:mx-0 drop-shadow-2xl invert brightness-0"
               />
-            </div> */}
+            </div>
 
             <p className="text-slate-300 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
               Join the world's most prestigious science competition for young innovators.

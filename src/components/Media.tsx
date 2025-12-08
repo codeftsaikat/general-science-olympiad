@@ -34,18 +34,6 @@ const Media = () => {
   return (
     <section id="media" className="py-24 bg-slate-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-12">Official Partners</h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-80 mb-20">
-          {/* Partner Names styled as professional logos */}
-          <div className="text-xl font-bold text-slate-800 logo-grayscale cursor-pointer">Kidlon</div>
-          <div className="text-xl font-bold text-slate-800 logo-grayscale cursor-pointer">Pentagon</div>
-          <div className="text-xl font-bold text-slate-800 logo-grayscale cursor-pointer">YGF Digital</div>
-          <div className="text-xl font-bold text-slate-800 logo-grayscale cursor-pointer text-center">Imperial School</div>
-          <div className="text-xl font-bold text-slate-800 logo-grayscale cursor-pointer">Panjeree</div>
-          <div className="text-xl font-bold text-slate-800 logo-grayscale cursor-pointer text-center">Hikmah Al Falah</div>
-        </div>
-
         <h2 className="text-center text-3xl serif-heading text-slate-900 mb-12">Media Coverage Showcase</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -145,7 +133,7 @@ const Media = () => {
                 <i className="fab fa-facebook text-slate-600"></i>
               </div>
               {/* Placeholder/Link for Facebook (Reels often block direct iframe embedding) */}
-              <a href="https://www.facebook.com/share/r/17ZF5ppxxj/" target="_blank" className="flex-grow bg-slate-800 relative group overflow-hidden block">
+              <a href="https://www.facebook.com/share/r/17ZF5ppxxj/" target="_blank" className="flex-grow bg-slate-800 relative group overflow-hidden block h-10">
                 <img src="https://images.unsplash.com/photo-1616469829718-0faf16324280?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
