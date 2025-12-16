@@ -87,7 +87,7 @@
 
 
   body {
-    background:
+    /* background:
       radial-gradient(circle at 20% 60%,
         color-mix(in srgb, var(--teal-custom) 30%, transparent 70%) 0%,
         transparent 50%),
@@ -96,7 +96,23 @@
         transparent 50%),
       linear-gradient(135deg,
         var(--navy-dark) 0%,
-        color-mix(in srgb, var(--navy-dark) 80%, var(--teal-brand) 20%) 100%);
+        color-mix(in srgb, var(--navy-dark) 100%, var(--teal-brand) 20%) 100%); */
+
+
+    background:
+      radial-gradient(circle at 50% 100%,
+        rgba(0, 0, 0, 0.4),
+        transparent 60%),
+      radial-gradient(circle at 25% 65%,
+        color-mix(in srgb, var(--teal-custom) 18%, transparent 82%) 0%,
+        transparent 45%),
+      radial-gradient(circle at 75% 25%,
+        color-mix(in srgb, var(--cyan-custom) 22%, transparent 78%) 0%,
+        transparent 45%),
+      linear-gradient(135deg,
+        #050b14 0%,
+        color-mix(in srgb, #050b14 85%, var(--teal-brand) 15%) 100%);
+
   }
 
   h1,

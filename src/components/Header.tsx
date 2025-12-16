@@ -141,8 +141,8 @@ const Header: React.FC = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-          ? 'bg-slate-900/50 backdrop-blur-xl shadow-lg border-teal-500/20'
-          : 'bg-slate-900/60 backdrop-blur-md'
+        ? 'bg-slate-900/50 backdrop-blur-xl shadow-lg border-teal-500/20'
+        : 'bg-slate-900/60 backdrop-blur-md'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -151,7 +151,7 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-3">
             <a href="#" className="flex items-center gap-3 group">
               <img
-                src="/logo-dark.svg"
+                src="/logo.png"
                 alt="GSO Logo"
                 className="h-14 w-auto object-contain filter group-hover:brightness-110 transition-all"
               />
