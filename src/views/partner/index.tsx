@@ -95,17 +95,6 @@ const PartnersSection = () => {
         }
     };
 
-    const getCategoryLabel = (category: string) => {
-        switch (category) {
-            case 'corporate': return 'Corporate';
-            case 'education': return 'Education';
-            case 'digital': return 'Digital';
-            case 'media': return 'Media';
-            case 'community': return 'Community';
-            default: return 'Partner';
-        }
-    };
-
     const getInitials = (name: string) => {
         return name
             .split(" ")

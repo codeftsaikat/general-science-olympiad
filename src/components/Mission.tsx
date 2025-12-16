@@ -23,7 +23,7 @@ const Mission = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md">
+            <div className="/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white">
                   <i className="fas fa-quote-left"></i>

@@ -3,179 +3,34 @@
 @tailwind utilities;
 
 :root {
+  /* Brand colors - Keep as HEX for direct use */
   --navy-dark: #0B1120;
   --navy-light: #1e293b;
   --teal-brand: #0f766e;
   --text-body: #334155;
   --bg-surface: #F8FAFC;
-
   --teal-custom: #159d8c;
   --cyan-custom: #00a7c4;
   --offwhite-custom: #FAF9F6;
-  --primary: #159d8c;
+
+  /* Primary color for direct use (if needed) */
+  --primary-hex: #159d8c;
 }
-
-@layer utilities {
-  .text-primary {
-    color: var(--primary) !important;
-  }
-
-  .bg-primary {
-    background-color: var(--primary) !important;
-  }
-
-  .border-primary {
-    border-color: var(--primary) !important;
-  }
-
-  .hover\:bg-primary:hover {
-    background-color: var(--primary) !important;
-  }
-
-  .hover\:text-primary:hover {
-    color: var(--primary) !important;
-  }
-}
-
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--text-body);
-  background-color: var(--bg-surface);
-  overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-.serif-heading {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Premium Buttons */
-.btn-gold {
-  background: linear-gradient(135deg, var(--primary) 0%, #0d7f71 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(21, 157, 140, 0.3);
-  transition: all 0.3s ease;
-}
-
-.btn-gold:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(21, 157, 140, 0.4);
-}
-
-/* Mobile Menu */
-#mobile-menu {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.counter-num {
-  font-feature-settings: "tnum";
-  font-variant-numeric: tabular-nums;
-}
-
-/* Video Playback Styling */
-.video-container {
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.video-container iframe {
-  display: none;
-  /* Hide iframe initially */
-}
-
-.video-container.active iframe {
-  display: block;
-  /* Show iframe when active */
-}
-
-.video-container .play-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  /* Dark overlay */
-  transition: background-color 0.3s ease;
-}
-
-.video-container:hover .play-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.video-container.active .play-overlay {
-  display: none;
-  /* Hide overlay when active */
-}
-
-.play-button {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.video-container:hover .play-button {
-  transform: scale(1.1);
-  background: rgba(21, 157, 140, 0.9);
-  /* Primary teal hover */
-}
-
-/* Custom video player styles */
-.react-player {
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.video-play-btn {
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-}
-
-/* Custom video controls */
-video::-webkit-media-controls-panel {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
-
-video::-webkit-media-controls-play-button {
-  background-color: #D4AF37;
-  border-radius: 50%;
-}
-
-
 
 @layer base {
   :root {
+    /* HSL variables for Tailwind opacity support */
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+
+    /* Primary color in HSL (#159d8c converted) */
+    --primary: 173 85% 34%;
     --primary-foreground: 0 0% 98%;
+
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
@@ -187,13 +42,16 @@ video::-webkit-media-controls-play-button {
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+
+    /* Chart colors */
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -222,13 +80,82 @@ video::-webkit-media-controls-play-button {
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
   }
-  body {
+
+  /* body {
     @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-body);
+    background-color: var(--teal-brand);
+    overflow-x: hidden;
+  } */
+  body {
+    background:
+      radial-gradient(circle at 20% 50%,
+        color-mix(in srgb, var(--teal-custom) 30%, transparent 70%) 0%,
+        transparent 50%),
+      radial-gradient(circle at 80% 20%,
+        color-mix(in srgb, var(--cyan-custom) 20%, transparent 80%) 0%,
+        transparent 50%),
+      linear-gradient(135deg,
+        var(--navy-dark) 0%,
+        color-mix(in srgb, var(--navy-dark) 80%, var(--teal-brand) 20%) 100%);
   }
+
+  h1,
+  h2,
+  h3,
+  .serif-heading {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+
+  /* For direct HEX color usage (legacy support) */
+  .text-primary-hex {
+    color: var(--primary-hex) !important;
+  }
+
+  .bg-primary-hex {
+    background-color: var(--primary-hex) !important;
+  }
+
+  .border-primary-hex {
+    border-color: var(--primary-hex) !important;
+  }
+
+  /* Custom utilities */
+  .counter-num {
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Animations - Critical above the fold */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Premium Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, #159d8c 0%, #0d7f71 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(21, 157, 140, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
