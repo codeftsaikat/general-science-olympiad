@@ -9,6 +9,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import SectionHeader from "@/src/components/section-header";
 import {
     Calendar,
     ExternalLink,
@@ -76,28 +77,20 @@ const MediaCoverageSection = () => {
     };
 
     return (
-        <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white" id="media">
+        <section className="py-16 md:py-20" id="media">
             <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-                {/* Header */}
-                <div className="text-center mb-12 md:mb-16">
-                    <Badge
-                        variant="outline"
-                        className="mb-4 px-4 py-1.5 border-primary"
-                    >
-                        Media Coverage
-                    </Badge>
 
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+
+                <SectionHeader
+                    heading="Media Coverage"
+                    title={<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white">
                         Featured in{" "}
                         <span className="text-primary">
                             National Media
                         </span>
-                    </h2>
-
-                    <p className="text-gray-600 max-w-2xl mx-auto">
-                        Watch our coverage on leading television channels
-                    </p>
-                </div>
+                    </h2>}
+                    description="Watch our coverage on leading television channels"
+                />
 
                 {/* Simple Carousel */}
                 <div className="mb-12 px-4">

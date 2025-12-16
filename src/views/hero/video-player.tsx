@@ -1,4 +1,5 @@
 "use client";
+import { Pause, Play } from "lucide-react";
 import { useRef, useState } from "react";
 import YouTube, { YouTubePlayer } from "react-youtube";
 
@@ -56,6 +57,8 @@ export default function VideoPlayerSection() {
                     >
                         <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-3xl hover:scale-110 transition-all shadow-2xl hover:shadow-primary-glow">
                             <i className={`fas ${isPlaying ? "fa-pause" : "fa-play"} ml-1`}></i>
+                            {isPlaying ? <Pause /> : <Play />
+                            }
                         </div>
                     </button>
                 </div>

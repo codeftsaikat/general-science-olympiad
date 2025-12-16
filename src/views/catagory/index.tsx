@@ -2,6 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import SectionHeader from "@/src/components/section-header";
 import {
     Award,
     Brain,
@@ -119,42 +120,21 @@ const CategoriesSection = () => {
     const selectedCategoryData = categories.find(cat => cat.id === selectedCategory) || categories[0];
 
     return (
-        <section id="categories-section" className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
+        <section id="categories-section" className="py-16 md:py-24">
             <div className="container px-4 md:px-6 max-w-7xl mx-auto">
                 {/* Header Section */}
-                <div className="text-center mb-12 md:mb-16">
-                    <div className="inline-flex items-center gap-2 mb-4">
-                        <Badge variant="secondary" className="px-4 py-1.5 border border-primary">
-                            Learning Pathways
-                        </Badge>
-                    </div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                <SectionHeader
+                    heading="Learning Pathways"
+                    title={<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white">
                         Specially Designed{" "}
                         <span className="text-primary">
                             Categories
                         </span>
                     </h2>
-                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-                        8 tailored learning pathways designed to nurture talent at every stage of development,
-                        from early childhood to professional mastery.
-                    </p>
-
-                    {/* Stats */}
-                    {/* <div className="flex flex-wrap justify-center gap-6 md:gap-12 mb-8">
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-primary">8</div>
-                            <div className="text-sm text-muted-foreground">Categories</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-primary">6-25+</div>
-                            <div className="text-sm text-muted-foreground">Age Range</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-primary">1-Graduate</div>
-                            <div className="text-sm text-muted-foreground">Class Levels</div>
-                        </div>
-                    </div> */}
-                </div>
+                    }
+                    description=" 8 tailored learning pathways designed to nurture talent at every stage of development,
+                        from early childhood to professional mastery."
+                />
 
                 {/* Categories Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

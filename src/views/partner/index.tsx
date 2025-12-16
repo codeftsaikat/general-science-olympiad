@@ -2,6 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import SectionHeader from "@/src/components/section-header";
 import {
     BookOpen,
     Briefcase,
@@ -113,28 +114,20 @@ const PartnersSection = () => {
     };
 
     return (
-        <section className="py-12 md:py-16 bg-gradient-to-b from-white to-gray-50/50">
+        <section className="py-12 md:py-16">
             <div className="container px-4 md:px-6 max-w-6xl mx-auto">
-                {/* Header */}
-                <div className="text-center mb-10">
-                    <Badge
-                        variant="outline"
-                        className="mb-4 px-4 py-1.5 border-primary"
-                    >
-                        Partners & Sponsors
-                    </Badge>
 
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+
+                <SectionHeader
+                    heading="Partners & Sponsors"
+                    title={<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white">
                         Trusted by 200+{" "}
                         <span className="text-primary">
                             Organizations
                         </span>
-                    </h2>
-
-                    <p className="text-gray-600 max-w-2xl mx-auto">
-                        Collaborating with industry leaders to create exceptional educational experiences
-                    </p>
-                </div>
+                    </h2>}
+                    description="Collaborating with industry leaders to create exceptional educational experiences"
+                />
 
                 {/* Partners Grid */}
                 <div className="mb-8">

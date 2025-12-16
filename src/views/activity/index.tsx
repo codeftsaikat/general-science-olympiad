@@ -2,6 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import SectionHeader from "@/src/components/section-header";
 import {
     ArrowRight,
     Globe,
@@ -70,23 +71,16 @@ const SimpleActivitiesSection = () => {
     const currentActivity = activities[currentIndex];
 
     return (
-        <section className="py-16 bg-white" id="about">
+        <section className="py-16 md:py-20" id="about">
             <div className="container px-4 max-w-6xl mx-auto">
 
-                <div className="text-center mb-12 md:mb-16">
-                    <div className="inline-flex items-center gap-2 mb-4">
-                        <Badge variant="secondary" className="px-4 py-1.5 border border-primary">
-                            Our Activities
-                        </Badge>
-                    </div>
-
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                <SectionHeader
+                    heading="Our Activities"
+                    title={<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-white">
                         Explore Our <span className="text-primary"> Activity </span>
-                    </h2>
-                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                        5 specialized programs to nurture talent at every level
-                    </p>
-                </div>
+                    </h2>}
+                    description="5 specialized programs to nurture talent at every level"
+                />
 
                 {/* Auto-Changing Banner */}
                 <div className="mb-12">
@@ -143,7 +137,7 @@ const SimpleActivitiesSection = () => {
                     {activities.map((activity, index) => (
                         <div
                             key={activity.id}
-                            className={`text-center p-4 rounded-lg cursor-pointer transition-all ${currentIndex === index
+                            className={`text-center p-4 rounded-lg cursor-pointer transition-all bg-white ${currentIndex === index
                                 ? "ring-2 ring-primary scale-105"
                                 : "hover:bg-gray-50"
                                 }`}
