@@ -8,11 +8,11 @@ const EventStats = () => {
             <div className="text-center mb-12">
                 <div className="inline-flex items-center justify-center mb-4">
                     <div className="w-8 h-px bg-primary mr-3"></div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Event Statistics
+                    <h3 className="text-2xl md:text-3xl font-bold text-white">Event Statistics
                     </h3>
                     <div className="w-8 h-px bg-primary ml-3"></div>
                 </div>
-                <p className="text-gray-600 max-w-2xl mx-auto">
+                <p className="text-white/50 max-w-2xl mx-auto">
                     Real numbers showing event statistics
                 </p>
             </div>

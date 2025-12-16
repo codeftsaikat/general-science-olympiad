@@ -29,12 +29,9 @@ const EventTabs = ({ activeTab, onTabChange, eventCategories }: EventTabsProps) 
                     }
 
                     return (
-                        <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-2 p-4 rounded-lg">
+                        <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-2 rounded-lg data-[state=active]:bg-primary data-[state=active]:text-white">
                             <Icon className="h-4 w-4" />
                             <span>{category.name.split(' ')[0]}</span>
-                            <span className="ml-1 text-xs text-primary px-2 py-0.5 rounded-full">
-                                {category.count}
-                            </span>
                         </TabsTrigger>
                     );
                 })}
@@ -44,22 +41,22 @@ const EventTabs = ({ activeTab, onTabChange, eventCategories }: EventTabsProps) 
             <div className="mt-8">
                 <TabsContent value="ongoing" className="mt-0">
                     <div className="mb-6 text-center">
-                        <h3 className="text-2xl font-bold mb-2">Currently Running Events</h3>
-                        <p className="text-muted-foreground">Active events you can participate in right now</p>
+                        <h3 className="text-2xl font-bold mb-2">Ongoing Events</h3>
+                        <p className="text-white/50">Active events you can participate in right now</p>
                     </div>
                 </TabsContent>
 
                 <TabsContent value="past" className="mt-0">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold mb-2">Completed Events</h3>
-                        <p className="text-muted-foreground">Past events with photos, videos, and outcomes</p>
+                        <p className="text-white/50">Past events with photos, videos, and outcomes</p>
                     </div>
                 </TabsContent>
 
                 <TabsContent value="future" className="mt-0">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold mb-2">Upcoming Events</h3>
-                        <p className="text-muted-foreground">Future events you can prepare for and register</p>
+                        <p className="text-white/50">Future events you can prepare for and register</p>
                     </div>
                 </TabsContent>
             </div>

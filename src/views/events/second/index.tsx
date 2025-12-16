@@ -1,8 +1,8 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 
+import SectionHeader from "@/src/components/section-header";
 import EventCard from "./event-card";
 import EventStats from "./event-stats";
 import EventTabs from "./event-tab";
@@ -18,26 +18,20 @@ const EventsSection = () => {
     };
 
     return (
-        <section className="py-16 md:py-24 bg-gray-50/50" id="second">
+        <section className="py-16 md:py-24 text-white" id="second">
             <div className="container px-4 mx-auto">
                 {/* Section Header */}
-                <div className="text-center mb-12 md:mb-16">
-                    <div className="inline-flex items-center gap-2 mb-4">
-                        <Badge variant="secondary" className="px-4 py-1.5 border border-primary">
-                            Events & Activities
-                        </Badge>
-                    </div>
 
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+                <SectionHeader
+                    heading="Events & Activities"
+                    title={<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
                         Explore Our <span className="text-primary">Science Events</span>
-                    </h2>
-                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                        From olympiads to discussions, discover opportunities to learn, compete, and grow with our science community
-                    </p>
-                </div>
+                    </h2>}
+                    description="From olympiads to discussions, discover opportunities to learn, compete, and grow with our science community"
+                />
 
                 {/* Event Tabs */}
-                <div className="-scroll-mb-10">
+                <div className="mb-10">
                     <EventTabs
                         activeTab={activeTab}
                         onTabChange={handleTabChange}
