@@ -199,17 +199,6 @@ const PartnersSection = () => {
                                                 </p>
                                             )}
 
-                                            <div className="flex items-center gap-2 mt-2">
-                                                <span className="text-xs text-gray-400 truncate">
-                                                    {getDomain(partner.url)}
-                                                </span>
-                                                <Badge
-                                                    variant="secondary"
-                                                    className="text-xs px-2 py-0.5"
-                                                >
-                                                    {getCategoryLabel(partner.category)}
-                                                </Badge>
-                                            </div>
                                         </div>
                                     </div>
                                 </CardContent>
@@ -219,7 +208,7 @@ const PartnersSection = () => {
                 </div>
 
                 {/* Stats and Additional Info */}
-                <div className="mb-8">
+                {/* <div className="mb-8">
                     <Card className="bg-gradient-to-r from-primary/5 to-primary/10 border-primary">
                         <CardContent className="p-6">
                             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -246,21 +235,8 @@ const PartnersSection = () => {
                             </div>
                         </CardContent>
                     </Card>
-                </div>
-
-                {/* CTA */}
-                {/* <div className="text-center">
-                    <div className="inline-flex flex-col sm:flex-row items-center gap-4">
-                        <Button className="gap-2">
-                            <Handshake className="h-4 w-4" />
-                            Become a Partner
-                        </Button>
-                        <Button variant="outline" className="gap-2">
-                            View All 200+ Partners
-                            <ChevronRight className="h-4 w-4" />
-                        </Button>
-                    </div>
                 </div> */}
+
             </div>
         </section>
     );

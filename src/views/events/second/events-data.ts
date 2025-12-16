@@ -12,7 +12,7 @@ export const eventsData: EventsData = {
       id: 1,
       title: "2nd International General Science Olympiad",
       shortTitle: "2nd IGSO",
-      date: "Ongoing • Multiple Dates",
+      date: "Ongoing",
       location: "Various Locations Nationwide",
       description:
         "A prestigious international science competition challenging young minds with innovative problem-solving and critical thinking tasks.",

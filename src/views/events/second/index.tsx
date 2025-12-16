@@ -6,7 +6,7 @@ import { useState } from "react";
 import EventCard from "./event-card";
 import EventStats from "./event-stats";
 import EventTabs from "./event-tab";
-import { eventCategories, eventsData, eventStats } from "./events-data";
+import { eventCategories, eventsData } from "./events-data";
 
 type ActiveTab = 'ongoing' | 'past' | 'future';
 
@@ -59,7 +59,7 @@ const EventsSection = () => {
 
                 {/* Event Statistics */}
                 <div className="mb-12">
-                    <EventStats stats={eventStats} />
+                    <EventStats />
                 </div>
             </div>
         </section>

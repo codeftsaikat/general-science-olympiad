@@ -1,12 +1,11 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
     Award,
-    BookOpen,
     Brain,
+    Calendar,
     ChevronRight,
     Compass,
     GraduationCap,
@@ -51,7 +50,6 @@ const CategoriesSection = () => {
             icon: <Sparkles className="h-8 w-8" />,
             description: "Foundational learning with play-based activities to spark curiosity and basic problem-solving skills.",
             color: "from-pink-400 to-rose-500",
-            tags: ["Curiosity", "Foundations", "Play-based"],
         },
         {
             id: 2,
@@ -61,7 +59,6 @@ const CategoriesSection = () => {
             icon: <Compass className="h-8 w-8" />,
             description: "Introduction to structured learning with hands-on exploration and basic logical thinking.",
             color: "from-blue-400 to-cyan-500",
-            tags: ["Exploration", "Hands-on", "Discovery"],
         },
         {
             id: 3,
@@ -71,7 +68,6 @@ const CategoriesSection = () => {
             icon: <Lightbulb className="h-8 w-8" />,
             description: "Developing creative thinking and problem-solving skills through project-based learning.",
             color: "from-amber-400 to-orange-500",
-            tags: ["Creativity", "Projects", "Problem-solving"],
         },
         {
             id: 4,
@@ -81,7 +77,6 @@ const CategoriesSection = () => {
             icon: <Target className="h-8 w-8" />,
             description: "Advanced critical thinking and leadership skills development for young adolescents.",
             color: "from-emerald-400 to-green-500",
-            tags: ["Leadership", "Critical Thinking", "Advanced"],
         },
         {
             id: 5,
@@ -91,7 +86,6 @@ const CategoriesSection = () => {
             icon: <Rocket className="h-8 w-8" />,
             description: "Specialized skill development and career exploration with real-world applications.",
             color: "from-violet-400 to-purple-500",
-            tags: ["Specialization", "Career", "Real-world"],
         },
         {
             id: 6,
@@ -101,7 +95,6 @@ const CategoriesSection = () => {
             icon: <Zap className="h-8 w-8" />,
             description: "College preparation and advanced research skills with professional mentorship.",
             color: "from-red-400 to-pink-500",
-            tags: ["Research", "College Prep", "Professional"],
         },
         {
             id: 7,
@@ -111,7 +104,6 @@ const CategoriesSection = () => {
             icon: <GraduationCap className="h-8 w-8" />,
             description: "Advanced academic research, professional networking, and industry collaboration.",
             color: "from-indigo-400 to-blue-500",
-            tags: ["Academic", "Research", "Networking"],
         },
         {
             id: 8,
@@ -121,7 +113,6 @@ const CategoriesSection = () => {
             icon: <Brain className="h-8 w-8" />,
             description: "Expert-level collaboration, innovation, and thought leadership in specialized fields.",
             color: "from-gray-700 to-gray-900",
-            tags: ["Expert", "Innovation", "Leadership"],
         },
     ];
 
@@ -202,22 +193,11 @@ const CategoriesSection = () => {
                                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                         <Users className="h-3 w-3" />
                                         <span>{category.classRange}</span>
-                                        <span>•</span>
+                                        <Calendar className="h-3 w-3" />
                                         <span>{category.ageRange}</span>
                                     </div>
 
-                                    {/* Tags */}
-                                    <div className="flex flex-wrap gap-1 mt-3">
-                                        {category.tags.map((tag, tagIndex) => (
-                                            <Badge
-                                                key={tagIndex}
-                                                variant="outline"
-                                                className="text-xs px-2 py-0.5"
-                                            >
-                                                {tag}
-                                            </Badge>
-                                        ))}
-                                    </div>
+
                                 </div>
                             </CardContent>
                         </Card>
@@ -300,69 +280,10 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
 
-                            {/* CTA Buttons */}
-                            <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t">
-                                <Button className="gap-2 flex-1">
-                                    <BookOpen className="h-4 w-4" />
-                                    Explore Curriculum
-                                </Button>
-                                <Button variant="outline" className="gap-2 flex-1">
-                                    <Sparkles className="h-4 w-4" />
-                                    Schedule Demo
-                                </Button>
-                                <Button variant="ghost" className="gap-2">
-                                    Download Brochure
-                                    <ChevronRight className="h-4 w-4" />
-                                </Button>
-                            </div>
                         </CardContent>
                     </Card>
                 </div>
 
-                {/* Additional Information */}
-                <div className="mt-12 grid md:grid-cols-3 gap-6">
-                    <Card className="border-border">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="p-2 rounded-lg bg-primary/10">
-                                    <Users className="h-5 w-5 text-primary" />
-                                </div>
-                                <h4 className="font-semibold">Progressive Learning</h4>
-                            </div>
-                            <p className="text-sm text-muted-foreground">
-                                Each category builds upon previous knowledge, ensuring a seamless learning journey from foundation to mastery.
-                            </p>
-                        </CardContent>
-                    </Card>
-
-                    <Card className="border-border">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="p-2 rounded-lg bg-primary/10">
-                                    <Target className="h-5 w-5 text-primary" />
-                                </div>
-                                <h4 className="font-semibold">Age-Appropriate Content</h4>
-                            </div>
-                            <p className="text-sm text-muted-foreground">
-                                Content and teaching methodologies are specially designed for each age group&apos;s cognitive development stage.
-                            </p>
-                        </CardContent>
-                    </Card>
-
-                    <Card className="border-border">
-                        <CardContent className="p-6">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="p-2 rounded-lg bg-primary/10">
-                                    <Award className="h-5 w-5 text-primary" />
-                                </div>
-                                <h4 className="font-semibold">Skill Certification</h4>
-                            </div>
-                            <p className="text-sm text-muted-foreground">
-                                Each category includes recognized certification upon completion, adding value to academic and professional profiles.
-                            </p>
-                        </CardContent>
-                    </Card>
-                </div>
             </div>
         </section>
     );

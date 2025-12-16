@@ -79,20 +79,6 @@ const EventCard = ({ event, isFeatured = false }: EventCardProps) => {
                     {event.description}
                 </p>
 
-                {/* Highlights */}
-                {event.highlights && event.highlights.length > 0 && (
-                    <div className="mb-4">
-                        <h4 className="text-sm font-semibold mb-2">Highlights:</h4>
-                        <ul className="space-y-1">
-                            {event.highlights.slice(0, 2).map((highlight, index) => (
-                                <li key={index} className="flex items-center text-xs text-gray-600">
-                                    <span className="w-1 h-1 bg-primary rounded-full mr-2"></span>
-                                    {highlight}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
             </CardContent>
 
             {/* Card Footer with Actions */}

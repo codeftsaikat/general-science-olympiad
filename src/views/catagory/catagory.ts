@@ -6,5 +6,4 @@ export interface Category {
   icon: React.ReactNode;
   description: string;
   color: string;
-  tags: string[];
 }

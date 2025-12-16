@@ -1,40 +1,49 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CalendarPlus, MapPin, Trophy, Users } from "lucide-react";
-import { EventStat } from "./types";
 
-interface EventStatsProps {
-    stats: EventStat[];
-}
 
-const EventStats = ({ stats }: EventStatsProps) => {
-    const icons = [Trophy, Users, MapPin, CalendarPlus];
+const EventStats = () => {
 
     return (
-        <Card className="border-primary">
-            <CardHeader>
-                <CardTitle className="text-center">Event Statistics</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    {stats.map((stat, index) => {
-                        const Icon = icons[index];
-                        return (
-                            <div key={index} className="text-center">
-                                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-3">
-                                    <Icon className="h-6 w-6 text-primary" />
-                                </div>
-                                <div className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                                    {stat.value}
-                                </div>
-                                <div className="text-sm text-muted-foreground font-medium">
-                                    {stat.label}
-                                </div>
-                            </div>
-                        );
-                    })}
+
+        <div className="mb-16 md:mb-24 w-full">
+            <div className="text-center mb-12">
+                <div className="inline-flex items-center justify-center mb-4">
+                    <div className="w-8 h-px bg-primary mr-3"></div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Event Statistics
+                    </h3>
+                    <div className="w-8 h-px bg-primary ml-3"></div>
                 </div>
-            </CardContent>
-        </Card>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                    Real numbers showing event statistics
+                </p>
+            </div>
+
+            {/* Stats Grid */}
+            <div className="flex justify-center items-center">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    {[
+
+                        { label: "Total Events", value: "15+" },
+                        { label: "Total Participants", value: "50K+" },
+                        { label: "Districts Covered", value: "12+" },
+                        { label: "Upcoming Events", value: "8+" },
+                    ].map((stat, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-gray-200 rounded-lg p-5 text-center transition-all duration-300 hover:border-primary hover:shadow-sm group"
+                        >
+                            <div className="text-2xl md:text-3xl font-bold text-primary mb-2 group-hover:scale-105 transition-transform duration-300">
+                                {stat.value}
+                            </div>
+                            <div className="font-semibold text-gray-900 mb-1">
+                                {stat.label}
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+
     );
 };
 
