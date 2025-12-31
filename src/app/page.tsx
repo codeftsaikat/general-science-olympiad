@@ -16,6 +16,7 @@ export default function Home() {
     <div className="antialiased">
       <ScrollEffect />
       <Header />
+
       <Hero />
       <div className='max-w-7xl mx-auto'>
         <MissionVisionImpactSimple />
