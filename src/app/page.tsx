@@ -1,5 +1,5 @@
 
-import ScrollEffect from '@/src/components/common/scroll-effect';
+import ScrollEffect from '@/components/common/scroll-effect';
 import Footer from '../components/common/footer';
 import Header from '../components/common/header';
 import ActivitiesSection from '../views/home/activity';

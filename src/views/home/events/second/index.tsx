@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import SectionHeader from "@/src/components/common/section-header";
+import SectionHeader from "@/components/common/section-header";
 import EventCard from "./event-card";
 import EventStats from "./event-stats";
 import EventTabs from "./event-tab";

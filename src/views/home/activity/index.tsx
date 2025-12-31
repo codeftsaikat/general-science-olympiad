@@ -1,8 +1,8 @@
 "use client";
 
+import SectionHeader from "@/components/common/section-header";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import SectionHeader from "@/src/components/common/section-header";
 import {
     ArrowRight,
     Globe,

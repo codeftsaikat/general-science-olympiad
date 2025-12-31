@@ -1,8 +1,8 @@
 "use client";
 
+import SectionHeader from "@/components/common/section-header";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import SectionHeader from "@/src/components/common/section-header";
 import {
     BookOpen,
     Briefcase,
