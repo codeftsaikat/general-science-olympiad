@@ -1,13 +1,14 @@
-import Footer from '@/src/components/Footer';
-import Header from '@/src/components/Header';
-import Hero from '@/src/components/Hero';
-import ScrollEffect from '@/src/components/ScrollEffect';
-import ActivitiesSection from '../views/activity';
-import CategoriesSection from '../views/catagory';
-import { default as MissionVisionImpactSimple } from '../views/events/first-ngso';
-import EventsSection from '../views/events/second';
-import MediaCoverageSection from '../views/media';
-import PartnersSection from '../views/partner';
+
+import ScrollEffect from '@/src/components/common/scroll-effect';
+import Footer from '../components/common/footer';
+import Header from '../components/common/header';
+import ActivitiesSection from '../views/home/activity';
+import CategoriesSection from '../views/home/catagory';
+import { default as MissionVisionImpactSimple } from '../views/home/events/first-ngso';
+import EventsSection from '../views/home/events/second';
+import Hero from '../views/home/hero';
+import MediaCoverageSection from '../views/home/media';
+import PartnersSection from '../views/home/partner';
 
 export default function Home() {
 
@@ -17,18 +18,10 @@ export default function Home() {
       <Header />
       <Hero />
       <div className='max-w-7xl mx-auto'>
-
-        {/* <TrustStrip /> */}
         <MissionVisionImpactSimple />
-        {/* <ValueProposition /> */}
         <EventsSection />
         <CategoriesSection />
-        {/* <Categories /> */}
-        {/* <Mission /> */}
-        {/* <Events /> */}
-        {/* <Flashback /> */}
         <PartnersSection />
-        {/* <Media /> */}
         <MediaCoverageSection />
         <ActivitiesSection />
       </div>

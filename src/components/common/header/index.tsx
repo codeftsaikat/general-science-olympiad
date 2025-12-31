@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ChevronDown, ChevronRight, ChevronUp, ExternalLink, Menu } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [eventsOpen, setEventsOpen] = useState(false);
