@@ -1,51 +1,27 @@
-"use client";
-
 import { Card } from '@/components/ui/card';
-import { useEffect, useRef, useState } from 'react';
 
 const MissionVisionImpact = () => {
-    const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                if (entries[0].isIntersecting) {
-                    setIsVisible(true);
-                }
-            },
-            { threshold: 0.1 }
-        );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
-        };
-    }, []);
 
     return (
-        <section ref={sectionRef} className="py-16 md:py-24" id='first'>
+        <section className="py-16 md:py-24" id='first'>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-20">
 
                     <div className="inline-flex items-center gap-2 mb-4">
-                        <div className="px-4 py-2 text-sm font-semibold rounded-full border border-primary/90 text-white">
+                        <div className="px-4 py-2 text-sm font-semibold rounded-full border border-black/20 text-black">
                             Our Purpose & Impact
                         </div>
                     </div>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black tracking-tight mb-4">
                         Shaping Future Thinkers <span className="text-primary">&</span>  Changemakers
                     </h2>
-                    <p className="text-lg text-white/50 max-w-3xl mx-auto">
+                    <p className="text-lg text-black max-w-3xl mx-auto">
                         Through innovative education and practical learning, we're building a community of problem-solvers ready to tackle real-world challenges
                     </p>
                 </div>
+
+
 
                 {/* Vision & Mission Cards */}
                 <div className="grid lg:grid-cols-2 gap-8 mb-16 md:mb-24">

@@ -1,4 +1,3 @@
-"use client";
 
 import SectionHeader from "@/components/common/section-header";
 import { Badge } from "@/components/ui/badge";
