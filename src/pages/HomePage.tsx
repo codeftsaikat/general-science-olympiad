@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
 import ScrollEffect from '@/components/common/scroll-effect';
+import { useEffect } from 'react';
 import Footer from '../components/common/footer';
 import Header from '../components/common/header';
 import ActivitiesSection from '../views/home/activity';
 import CategoriesSection from '../views/home/catagory';
-import { default as MissionVisionImpactSimple } from '../views/home/events/first-ngso';
+import { default as MissionVisionImpactSimple } from '../views/home/events/first/first-ngso';
 import EventsSection from '../views/home/events/second';
 import Hero from '../views/home/hero';
 import MediaCoverageSection from '../views/home/media';
@@ -19,12 +19,12 @@ export default function HomePage() {
     <div className="antialiased">
       <ScrollEffect />
       <Header />
-
       <Hero />
+
+      <MissionVisionImpactSimple />
+      <EventsSection />
+      <CategoriesSection />
       <div className='max-w-7xl mx-auto'>
-        <MissionVisionImpactSimple />
-        <EventsSection />
-        <CategoriesSection />
         <PartnersSection />
         <MediaCoverageSection />
         <ActivitiesSection />

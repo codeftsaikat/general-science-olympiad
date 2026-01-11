@@ -3,7 +3,10 @@ import { Card } from '@/components/ui/card';
 const MissionVisionImpact = () => {
 
     return (
-        <section className="py-16 md:py-24" id='first'>
+        <section className="py-16 md:py-24 text-black relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100"
+        >
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none" />
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-20">
@@ -14,7 +17,7 @@ const MissionVisionImpact = () => {
                         </div>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black tracking-tight mb-4">
-                        Shaping Future Thinkers <span className="text-primary">&</span>  Changemakers
+                        Shaping Future Thinkers & Changemakers
                     </h2>
                     <p className="text-lg text-black max-w-3xl mx-auto">
                         Through innovative education and practical learning, we're building a community of problem-solvers ready to tackle real-world challenges
@@ -104,11 +107,9 @@ const MissionVisionImpact = () => {
                 <div className="mb-16 md:mb-24">
                     <div className="text-center mb-12">
                         <div className="inline-flex items-center justify-center mb-4">
-                            <div className="w-8 h-px bg-primary mr-3"></div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white">Impacts Made</h3>
-                            <div className="w-8 h-px bg-primary ml-3"></div>
+                            <h3 className="text-2xl font-bold text-black">Impacts Made</h3>
                         </div>
-                        <p className="text-white/50 max-w-2xl mx-auto">
+                        <p className="text-foreground max-w-2xl mx-auto">
                             Real numbers showing our global reach and community impact
                         </p>
                     </div>

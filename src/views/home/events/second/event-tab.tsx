@@ -42,7 +42,7 @@ const EventTabs = ({ activeTab, onTabChange, eventCategories }: EventTabsProps) 
                 <TabsContent value="ongoing" className="mt-0">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl font-bold mb-2">Ongoing Events</h3>
-                        <p className="text-white/50">Active events you can participate in right now</p>
+                        <p className="text-foreground">Active events you can participate in right now</p>
                     </div>
                 </TabsContent>
 
