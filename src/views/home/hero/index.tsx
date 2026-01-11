@@ -2,7 +2,16 @@ import VideoPlayer from "../../../components/common/video-player";
 
 const Hero = () => {
     return (
-        <header className="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden bg-gradient-to-b from-neutral-100 to-neutral-300">
+        <header className="relative pt-24 pb-40 lg:pt-40 lg:pb-52 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-200/50">
+            <div className="absolute inset-0 overflow-hidden">
+                {/* Top-right premium glow */}
+                <div className="absolute -top-60 -right-60 w-96 h-96 bg-gradient-to-br from-amber-300/60 via-amber-200/30 to-transparent rounded-full blur-3xl shadow-2xl"></div>
+                {/* Bottom-left deeper accent with more opacity */}
+                <div className="absolute -bottom-40 -left-90 w-80 h-80 bg-gradient-to-tr from-slate-400/25 to-transparent rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-64 bg-gradient-to-t from-slate-400/40 via-slate-300/20 to-transparent blur-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900/5"></div>
+            </div>
+
             {/* High-End Abstract Background */}
             {/* <div className="absolute inset-0 z-0 opacity-30">
                 <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" />
@@ -13,16 +22,16 @@ const Hero = () => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Text Content */}
                     <div className="text-center lg:text-left fade-up">
-                        <div className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                        <div className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm border rounded-full text-primary text-xs font-bold uppercase tracking-widest ">
                             Registration Open for 2025
                         </div>
 
-                        {/* Fallback if Image Fails, otherwise Image Title */}
-                        <div className="mb-6">
+
+                        <div className="flex flex-col items-start w-fit">
                             <img
                                 src="https://lh3.googleusercontent.com/d/1fk91ln_9whUoiV4L9nIw-AT4VMIcYNrj"
                                 alt="2nd IGSO Title"
-                                className="w-full max-w-md mx-auto lg:mx-0 drop-shadow-2xl invert brightness-0"
+                                className="h-[150px]"
                             />
                         </div>
 
@@ -40,11 +49,6 @@ const Hero = () => {
                             </a>
                         </div>
 
-                        <div className="mt-8 flex items-center justify-center lg:justify-start gap-4 text-xs text-slate-400">
-                            <span className="flex items-center gap-1"><i className="fas fa-check-circle text-teal-500"></i> Verified Certificate</span>
-                            <span className="flex items-center gap-1"><i className="fas fa-check-circle text-teal-500"></i> Secure Payment</span>
-                            <span className="flex items-center gap-1"><i className="fas fa-check-circle text-teal-500"></i> Global Ranking</span>
-                        </div>
                     </div>
 
                     <VideoPlayer

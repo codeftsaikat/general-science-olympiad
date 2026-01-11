@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'TNYAdobeCaslonPro', 'Times New Roman', Times, serif; /* Exact font name as requested */
   /* Brand colors - Keep as HEX for direct use */
   --navy-dark: #0B1120;
   --navy-light: #1e293b;
@@ -111,7 +111,8 @@
   h2,
   h3,
   .serif-heading {
-    font-family: 'Tinos', 'Times New Roman', Times, serif; /* TNYAdobeCaslonPro equivalent */
+    font-family: 'IrvinHeadingPro', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* IrvinHeadingPro for headings */
+    font-weight: 400;
   }
 
   .playfair-font {
