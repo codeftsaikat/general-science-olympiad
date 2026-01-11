@@ -1,5 +1,4 @@
 import { Facebook, Linkedin, Youtube } from "lucide-react";
-import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -19,17 +18,17 @@ const Footer = () => {
                             Empowering the next generation of scientific minds through rigorous competition and global connectivity.
                         </p>
                         <div className="flex gap-4">
-                            <Link href="#" className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm flex items-center justify-center hover:bg-gradient-to-r hover:from-primary/40 hover:to-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                            <a href="#" className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm flex items-center justify-center hover:bg-gradient-to-r hover:from-primary/40 hover:to-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
                                 <Facebook />
-                            </Link>
+                            </a>
 
-                            <Link href="#" className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm flex items-center justify-center hover:bg-gradient-to-r hover:from-primary/40 hover:to-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                            <a href="#" className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm flex items-center justify-center hover:bg-gradient-to-r hover:from-primary/40 hover:to-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
                                 < Linkedin />
-                            </Link>
+                            </a>
 
-                            <Link href="#" className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm flex items-center justify-center hover:bg-gradient-to-r hover:from-primary/40 hover:to-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                            <a href="#" className="w-10 h-10 rounded-lg bg-white/5 backdrop-blur-sm flex items-center justify-center hover:bg-gradient-to-r hover:from-primary/40 hover:to-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1">
                                 <Youtube />
-                            </Link>
+                            </a>
                         </div>
                     </div>
 

@@ -17,7 +17,7 @@ import {
     Play,
     Video
 } from "lucide-react";
-import Image from "next/image";
+import { useState } from 'react';
 
 const MediaCoverageSection = () => {
     const mediaCoverage = [
@@ -117,11 +117,10 @@ const MediaCoverageSection = () => {
                                                 {/* Thumbnail */}
                                                 <div className="relative aspect-video overflow-hidden bg-gray-100 rounded-md">
                                                     {thumbnail ? (
-                                                        <Image
+                                                        <img
                                                             src={thumbnail}
                                                             alt={`${item.title} thumbnail`}
-                                                            fill
-                                                            className="object-cover hover:scale-105 transition-transform duration-500"
+                                                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                                         />
                                                     ) : (
                                                         <div className="absolute inset-0 flex items-center justify-center">

@@ -1,4 +1,4 @@
-
+import { useEffect } from 'react';
 import ScrollEffect from '@/components/common/scroll-effect';
 import Footer from '../components/common/footer';
 import Header from '../components/common/header';
@@ -10,7 +10,10 @@ import Hero from '../views/home/hero';
 import MediaCoverageSection from '../views/home/media';
 import PartnersSection from '../views/home/partner';
 
-export default function Home() {
+export default function HomePage() {
+  useEffect(() => {
+    document.title = 'General Science Olympiad | Official Portal';
+  }, []);
 
   return (
     <div className="antialiased">
