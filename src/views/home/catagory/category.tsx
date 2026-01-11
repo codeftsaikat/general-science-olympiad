@@ -16,6 +16,7 @@ import {
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useId, useRef, useState } from "react";
 import { useOutsideClick } from "../../../hooks/use-outside-click";
+import { Category } from "./catagory";
 
 export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof categories)[number] | boolean | null>(
@@ -213,7 +214,7 @@ export const CloseIcon = () => {
 };
 
 
-const categories = [
+const categories: Category[] = [
   {
     id: 1,
     name: "Wonderist",
