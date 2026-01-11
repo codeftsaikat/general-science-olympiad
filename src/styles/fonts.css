@@ -1,10 +1,28 @@
+/* Current fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/* New fonts as requested */
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+/* TNYAdobeCaslonPro alternative */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* IrvinHeadingPro alternative */
+
 :root {
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* Using IrvinHeadingPro as main font */
 }
 
 .playfair-font {
   font-family: 'Playfair Display', serif;
+}
+
+/* TNYAdobeCaslonPro equivalent */
+.tny-adobe-caslon-pro {
+  font-family: 'Tinos', 'Times New Roman', Times, serif;
+}
+
+/* IrvinHeadingPro equivalent */
+.irvin-heading-pro {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
