@@ -1,7 +1,3 @@
-"use client";
-
-import { cn } from "@/lib/utils";
-import { ExternalLink, Menu, Microscope, Zap } from "lucide-react";
 
 import {
   Accordion,
@@ -25,6 +21,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
+import { ExternalLink, Menu, Microscope, Zap } from "lucide-react";
 
 interface MenuItem {
   title: string;
@@ -52,7 +50,7 @@ interface Navbar1Props {
   };
 }
 
-const Navbar1 = ({
+const Navbar = ({
   logo = {
     url: "/",
     src: "/logo.png",
@@ -93,12 +91,12 @@ const Navbar1 = ({
 }: Navbar1Props) => {
   return (
     <section className={cn("py-0", className)}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0">
         {/* Desktop */}
         <nav className="hidden items-center justify-between lg:flex">
           {/* Logo */}
           <a href={logo.url} className="flex items-center gap-2">
-            <img src={logo.src} className="max-h-24" alt={logo.alt} />
+            <img src={logo.src} className="max-h-20" alt={logo.alt} />
           </a>
 
           {/* Menu */}
@@ -154,14 +152,14 @@ const Navbar1 = ({
 };
 
 const baseMenuClass =
-  "inline-flex h-10 items-center rounded-md px-4 text-sm font-medium text-white transition hover:bg-primary/10";
+  "inline-flex h-10 items-center rounded-md px-4 text-sm font-medium text-black transition hover:bg-primary/10";
 
 const renderMenuItem = (item: MenuItem) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
         <NavigationMenuTrigger
-          className="!bg-transparent !focus-visible:bg-transparent !data-[state=open]:bg-transparent !text-white"
+          className="!bg-transparent !focus-visible:bg-transparent !data-[state=open]:bg-transparent !text-black"
 
         >
           {item.title}
@@ -224,4 +222,4 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
   )
 };
 
-export { Navbar1 };
+export { Navbar };
