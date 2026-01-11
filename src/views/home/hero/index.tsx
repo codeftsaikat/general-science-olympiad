@@ -1,4 +1,4 @@
-import VideoPlayerSection from "./video-player";
+import VideoPlayer from "../../../components/common/video-player";
 
 const Hero = () => {
     return (
@@ -47,7 +47,9 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <VideoPlayerSection />
+                    <VideoPlayer
+                        src="https://www.youtube.com/embed/K-Q4r37XgVw"
+                    />
                 </div>
             </div>
         </header>
